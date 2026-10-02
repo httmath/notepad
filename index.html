@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quadro de anotações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1>Anotações</h1>
+    <!-- As abas são criadas pelo JS -->
+    <nav class="abas" id="abas"></nav>
+  </header>
+
+  <!-- data-coluna é o nome interno da coluna, o JS usa ele -->
+  <main class="quadro">
+
+    <section class="coluna" data-coluna="fazer">
+      <h2><span class="bolinha"></span>A fazer <span class="contador">0</span></h2>
+      <div class="lista"></div>
+      <button class="botao-abrir">+ Adicionar um cartão</button>
+      <form class="form-novo" hidden>
+        <textarea rows="2" placeholder="Digite o que precisa ser feito..."></textarea>
+        <div class="form-botoes">
+          <button type="submit" class="botao-adicionar">Adicionar</button>
+          <button type="button" class="botao-cancelar" title="Cancelar">×</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="coluna" data-coluna="pendente">
+      <h2><span class="bolinha"></span>Pendente <span class="contador">0</span></h2>
+      <div class="lista"></div>
+      <button class="botao-abrir">+ Adicionar um cartão</button>
+      <form class="form-novo" hidden>
+        <textarea rows="2" placeholder="Digite o que precisa ser feito..."></textarea>
+        <div class="form-botoes">
+          <button type="submit" class="botao-adicionar">Adicionar</button>
+          <button type="button" class="botao-cancelar" title="Cancelar">×</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="coluna" data-coluna="fazendo">
+      <h2><span class="bolinha"></span>Fazendo <span class="contador">0</span></h2>
+      <div class="lista"></div>
+      <button class="botao-abrir">+ Adicionar um cartão</button>
+      <form class="form-novo" hidden>
+        <textarea rows="2" placeholder="Digite o que precisa ser feito..."></textarea>
+        <div class="form-botoes">
+          <button type="submit" class="botao-adicionar">Adicionar</button>
+          <button type="button" class="botao-cancelar" title="Cancelar">×</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="coluna" data-coluna="concluido">
+      <h2><span class="bolinha"></span>Concluído <span class="contador">0</span></h2>
+      <div class="lista"></div>
+      <button class="botao-abrir">+ Adicionar um cartão</button>
+      <form class="form-novo" hidden>
+        <textarea rows="2" placeholder="Digite o que precisa ser feito..."></textarea>
+        <div class="form-botoes">
+          <button type="submit" class="botao-adicionar">Adicionar</button>
+          <button type="button" class="botao-cancelar" title="Cancelar">×</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
